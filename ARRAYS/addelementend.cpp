@@ -1,6 +1,3 @@
-
-ADD ELEMENT AT THE END OF THE ARRAY
-
 #include <bits/stdc++.h>
 using namespace std;
 int main()

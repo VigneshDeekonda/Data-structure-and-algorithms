@@ -43,12 +43,14 @@ int lengthofLL(Node *head)
     }
     return cnt;
 }
-int findtheelement(Node* head,int val){
+int findtheelement(Node *head, int val)
+{
     Node *temp = head;
     while (temp != nullptr)
     {
-        if(temp -> data == val) return 1;
-        temp = temp->next;       
+        if (temp->data == val)
+            return 1;
+        temp = temp->next;
     }
     return 0;
 }
@@ -63,5 +65,5 @@ int main()
     //     cout << temp->data << " ";
     //     temp = temp->next;
     // }
-    cout<<findtheelement(head,4);
+    cout << findtheelement(head, 4);
 }
