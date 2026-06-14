@@ -1,20 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-void findRepeatingElements(vector<int>& arr) {
-    unordered_map<int, int> elementCount;  // Map to store element counts
-    for(auto i : arr) ++elementCount[i];  // Count occurrences of each element
-    
-    cout << "The repeating elements are: ";
-    for(auto i : elementCount) {
-        if(i.second > 1)  // If the element appears more than once
-            cout << i.first << " ";  // Print the element
-    }
+void reversebyd(vector<int>arr,int n, int k){
+    reverse(arr.begin(),arr.begin()+k);
 }
-
-int main() {
-    vector<int> arr = {1, 1, 2, 3, 4, 4, 5, 2};  // Example input
-    findRepeatingElements(arr);  // Call function to find repeating elements
-    
+int main(){
+    int n;
+    cout<<"Enter the Size of the array : ";
+    cin>>n;
+    vector<int>arr(n);
+    for(int i = 0 ; i < n;i++){
+        cin>>arr[i];
+    }
+    int k;
+    cout<<"Enter the value of K : ";
+    cin>>k;
+    reversebyd(arr,n,k);
+    for(int num : arr){
+        cout<<num<< " ";
+    }
     return 0;
 }

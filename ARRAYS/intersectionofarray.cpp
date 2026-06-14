@@ -23,7 +23,7 @@ vector<int> intersectionofarray(vector<int> &arr1, vector<int> &arr2)
 }
 int main()
 {
-    vector<int> arr1 = {1, 1, 2, 2, 2, 4};
+    vector<int> arr1 = {1,1 ,2 ,2 ,2, 4};
     vector<int> arr2 = {2, 2, 4, 4};
     vector<int> result = intersectionofarray(arr1, arr2);
     cout<<"INTERSECTION OF ARRAT IS : ";
